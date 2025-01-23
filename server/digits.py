@@ -1,8 +1,13 @@
 """
 TODO: Insert what this program does here. Should start with
 digits is a FastAPI app that...
+
+This file should be compliant with Pyright.
+The tensorflow import is ignored with # type: ignore[import]
+because tensorflow doesn't support type hints appropriately.
 """
 
+from tensorflow.keras.saving import load_model  # type: ignore[import]
 from PIL import Image
 from io import BytesIO
 
